@@ -1,0 +1,105 @@
+.btn {
+  display: inline-block;
+  padding: .7em 1.5em;
+  border: none;
+  border-radius: 5px;
+  color: inherit;
+  font-size: .8em;
+
+  &:not(a):hover {
+    cursor: pointer;
+  }
+}
+
+a.btn {
+  text-decoration: none;
+}
+
+
+// Button Skins
+//===================
+
+.btn--primary,
+.btn--success,
+.btn--warning {
+  color: white;
+  transition-property: background-color;
+  transition-duration: .3s;
+}
+
+.btn--primary,
+.btn--success,
+.btn--warning,
+.btn--default {
+  transition-property: background-color;
+  transition-duration: .2s;
+}
+
+.btn--default {
+  background-color: $btn-default-bgColor;
+  border: 1px solid darken($btn-default-bgColor, 7%);
+
+  &:hover {
+    background-color: darken($btn-default-bgColor, 3%);
+  }
+}
+
+.btn--primary {
+  background-color: $btn-primary-bgColor;
+  border-color: darken($btn-primary-bgColor, 7%);
+
+  &:hover {
+    background-color: lighten($btn-primary-bgColor, 7%);
+  }
+}
+
+.btn--success {
+  background-color: $btn-success-bgColor;
+  border-color: darken($btn-success-bgColor, 7%);
+
+  &:hover {
+    background-color: lighten($btn-success-bgColor, 7%);
+  }
+}
+
+.btn--warning {
+  background-color: $btn-warning-bgColor;
+  border-color: darken($btn-warning-bgColor, 7%);
+
+  &:hover {
+    background-color: lighten($btn-warning-bgColor, 7%);;
+  }
+}
+
+.btn--hollow {
+  background-color: transparent !important;
+  border: 1px solid;
+
+  &:hover {}
+}
+
+// Button Sizes
+//======================
+
+.btn--large {
+  font-size: 1em;
+  min-width: 170px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+// Button Modifiers
+//======================
+
+.btn--round {
+  border-radius: 5px;
+}
+
+.btn--flat {
+  border-radius: 6px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 5px solid;
+  width: 200px;
+}

@@ -1,0 +1,12 @@
+.gallery {
+
+  &__item {
+    display: inline-block;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
+
+}

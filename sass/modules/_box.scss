@@ -1,0 +1,10 @@
+.box {
+  padding: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border: 1px solid #ccc;
+  
+  &--no-border {
+    border: none;
+  }
+}
